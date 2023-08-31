@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/all.js"></script>
+    <style>
+      .cart {
+        width: 500px;
+        margin: 20px auto;
+      }
+      .cart > li {
+        margin-bottom: 1em;
+      }
+      .cart > li > a {
+        color: blue;
+        border: 1px solid gray;
+        display: block;
+        padding: 5px;
+      }
+      .cart > li > a:hover {
+        background: blue;
+        color: #fff;
+      }
+      .cart > li li {
+        margin: 5px 0;
+      }
+      .cart ul {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="cart">
+      <li>
+        <a href="#">選單1</a>
+        <ul>
+          <li><a href="#">選單1-1</a></li>
+          <li><a href="#">選單1-2</a></li>
+          <li><a href="#">選單1-3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">選單2</a>
+        <ul>
+          <li><a href="#">選單2-1</a></li>
+          <li><a href="#">選單2-2</a></li>
+          <li><a href="#">選單2-3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">選單3</a>
+        <ul>
+          <li><a href="#">選單3-1</a></li>
+          <li><a href="#">選單3-2</a></li>
+          <li><a href="#">選單3-3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

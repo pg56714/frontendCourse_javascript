@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--放CSS-->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <style>
+      .wrap {
+        width: 800px;
+        margin: 20px auto;
+      }
+      .cart li {
+        width: 30%;
+        margin: 0 1.5% 1em 1.5%;
+        float: left;
+      }
+      .swiper {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- 輪播項目 -->
+          <div class="swiper-slide">
+            <img src="images/up.jpg" width="100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/nemo.jpg" width="100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/walle.jpg" width="100%" />
+          </div>
+        </div>
+        <!-- 分頁設置 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 上一個/下一個 按鈕 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="content">
+        <div class="cart">
+          <ul>
+            <li>
+              <a
+                href="images/image-2.jpg"
+                data-lightbox="example"
+                data-title="圖片標題一"
+              >
+                <img src="images/thumb-2.jpg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="images/image-3.jpg"
+                data-lightbox="example"
+                data-title="圖片標題一"
+              >
+                <img src="images/thumb-3.jpg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="images/image-4.jpg"
+                data-lightbox="example"
+                data-title="圖片標題二"
+              >
+                <img src="images/thumb-4.jpg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="images/image-2.jpg"
+                data-lightbox="example"
+                data-title="圖片標題一"
+              >
+                <img src="images/thumb-2.jpg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="images/image-3.jpg"
+                data-lightbox="example"
+                data-title="圖片標題一"
+              >
+                <img src="images/thumb-3.jpg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="images/image-4.jpg"
+                data-lightbox="example"
+                data-title="圖片標題二"
+              >
+                <img src="images/thumb-4.jpg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--放JS-->
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        speed: 3000,
+        loop: true,
+        autoplay: {
+          delay: 1500,
+        },
+        //effect: "cube",
+        effect: "slide",
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

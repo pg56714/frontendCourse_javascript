@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/all.js"></script>
+    <style>
+      .container {
+        position: relative;
+      }
+      .main {
+        width: 100%;
+        height: 300px;
+        background: #000;
+        float: right;
+        transition: 0.3s ease;
+      }
+      .header1 {
+        height: 50px;
+        background: red;
+      }
+      .aside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 270px;
+        height: 300px;
+        background: yellow;
+        overflow: hidden;
+        transform: translateX(-270px);
+      }
+      .open .main {
+        transform: translateX(270px);
+      }
+      .open .aside {
+        transform: translateX(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="aside"></div>
+      <div class="main">
+        <div class="header1"></div>
+      </div>
+    </div>
+  </body>
+</html>

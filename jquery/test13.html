@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/all.js"></script>
+    <style>
+      .question-list {
+        margin: 0 auto;
+        width: 500px;
+      }
+      .question h3 {
+        border: 1px solid gray;
+        padding: 5px;
+        font-size: 18px;
+      }
+      .question h3:hover,
+      .question h3.active {
+        background: blue;
+        color: #fff;
+      }
+      .question p {
+        display: none;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="question-list">
+      <div class="question">
+        <h3>1.請問1+1=多少</h3>
+        <p>答案記得沒錯的話，應該是2吧！</p>
+      </div>
+      <div class="question">
+        <h3>2.那假如是2+2的話呢</h3>
+        <p>當然是4啊！</p>
+      </div>
+      <div class="question">
+        <h3>3.ok，所以3+3就等於7嘍</h3>
+        <p>...我看你還是重讀小學吧！</p>
+      </div>
+    </div>
+  </body>
+</html>

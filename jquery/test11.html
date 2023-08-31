@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/all.js"></script>
+    <style>
+      .cart {
+        width: 300px;
+        margin: 20px auto;
+      }
+      .cart h2 {
+        margin-bottom: 1em;
+        font-size: 19.2px;
+      }
+      .cart li {
+        border: 1px solid gray;
+        padding: 5px;
+        margin-bottom: 2em;
+      }
+      .cart li.active {
+        background: #0095d4;
+        color: #fff;
+      }
+      .addCart {
+        background: blue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      .addCart:hover {
+        background: #008dd8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cart">
+      <h2>購物車</h2>
+      <ul>
+        <li>
+          <input type="button" class="addCart" value="加入購物車" />吹風機
+        </li>
+        <li>
+          <input type="button" class="addCart" value="加入購物車" />冷氣機
+        </li>
+        <li><input type="button" class="addCart" value="加入購物車" />電視</li>
+        <li><input type="button" class="addCart" value="加入購物車" />電腦</li>
+        <li>
+          <input type="button" class="addCart" value="加入購物車" />平版電腦
+        </li>
+        <li>
+          <input type="button" class="addCart" value="加入購物車" />智慧型手機
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
